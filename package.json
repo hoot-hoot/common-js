@@ -1,8 +1,8 @@
 {
-    "name": "@hoot-hoot/common-js",
-    "version": "0.0.0",
+    "name": "@truesparrow/common-js",
+    "version": "0.0.1",
     "description": "Things shared between packages. Isomorphic, of course.",
-    "author": "Hoot-Hoot team",
+    "author": "CHM SQRT2 Team",
     "scripts": {
         "build": "tsc",
         "test-dev": "tsc --watch & mocha --watch $(find out -name '*-test.js')",
@@ -15,9 +15,9 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/hoot-hoot/common-js.git"
+        "url": "git+https://github.com/truesparrow/common-js.git"
     },
-    "homepage": "https://github.com/hoot-hoot/common-js#readme",
+    "homepage": "https://github.com/truesparrow/common-js#readme",
     "main": "./index.js",
     "types": "./index.d.ts",
     "filesPack": {
@@ -35,7 +35,7 @@
         "slugify": "=1.2.6"
     },
     "devDependencies": {
-        "@hoot-hoot/togemfury": "=0.0.0",
+        "@truesparrow/togemfury": "=0.0.3",
         "@types/chai": "=4.0.8",
         "@types/istanbul": "=0.4.29",
         "@types/mocha": "=2.2.44",
