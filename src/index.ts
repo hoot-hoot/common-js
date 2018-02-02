@@ -31,3 +31,8 @@ export {
 export {
     slugify
 } from './slugify'
+
+export {
+    UserInput,
+    UserInputMaster
+} from './user-input'
