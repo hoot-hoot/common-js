@@ -1,6 +1,6 @@
 {
     "name": "@truesparrow/common-js",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "Things shared between packages. Isomorphic, of course.",
     "author": "CHM SQRT2 Team",
     "scripts": {
@@ -35,7 +35,7 @@
         "slugify": "=1.2.6"
     },
     "devDependencies": {
-        "@truesparrow/togemfury": "=0.0.3",
+        "@truesparrow/togemfury": "latest",
         "@types/chai": "=4.0.8",
         "@types/istanbul": "=0.4.29",
         "@types/mocha": "=2.2.44",
