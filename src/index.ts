@@ -31,3 +31,10 @@ export {
 export {
     slugify
 } from './slugify'
+
+export {
+    ApiGatewayWebFetcher,
+    InternalWebFetcher,
+    WebFetcher
+} from './web-fetcher'
+
