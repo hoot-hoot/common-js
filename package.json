@@ -1,6 +1,6 @@
 {
     "name": "@truesparrow/common-js",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Things shared between packages. Isomorphic, of course.",
     "author": "CHM SQRT2 Team",
     "scripts": {
@@ -30,6 +30,7 @@
     "dependencies": {
         "iso-3166-1-alpha-2": "1.0.0",
         "iso-639-1": "=2.0.1",
+        "isomorphic-fetch": "=2.2.1",
         "locale-code": "=1.1.1",
         "raynor": "=0.14.0",
         "slugify": "=1.2.6"
