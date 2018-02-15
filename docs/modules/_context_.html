@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;env&quot; | common-js</title>
+	<title>&quot;context&quot; | common-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_env_.html">&quot;env&quot;</a>
+					<a href="_context_.html">&quot;context&quot;</a>
 				</li>
 			</ul>
-			<h1>External module &quot;env&quot;</h1>
+			<h1>External module &quot;context&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +69,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Define <a href="../enums/_env_.env.html">Env</a> and associated helpers.</p>
+						<p>Defines <a href="../enums/_context_.context.html">Context</a> and associated helpers.</p>
 					</div>
 				</div>
 			</section>
@@ -80,16 +80,15 @@
 						<section class="tsd-index-section ">
 							<h3>Enumerations</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_env_.env.html" class="tsd-kind-icon">Env</a></li>
+								<li class="tsd-kind-enum tsd-parent-kind-external-module"><a href="../enums/_context_.context.html" class="tsd-kind-icon">Context</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#envtostring" class="tsd-kind-icon">env<wbr>ToString</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#islocal" class="tsd-kind-icon">is<wbr>Local</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#isonserver" class="tsd-kind-icon">is<wbr>OnServer</a></li>
-								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#parseenv" class="tsd-kind-icon">parse<wbr>Env</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_context_.html#isclient" class="tsd-kind-icon">is<wbr>Client</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_context_.html#isserver" class="tsd-kind-icon">is<wbr>Server</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_context_.html#parsecontext" class="tsd-kind-icon">parse<wbr>Context</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,129 +97,103 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="envtostring" class="tsd-anchor"></a>
-					<h3>env<wbr>ToString</h3>
+					<a name="isclient" class="tsd-anchor"></a>
+					<h3>is<wbr>Client</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">env<wbr>ToString<span class="tsd-signature-symbol">(</span>env<span class="tsd-signature-symbol">: </span><a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Client<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../enums/_context_.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/env.ts#L46">env.ts:46</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>env: <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
-							<p>A string representation of env.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="islocal" class="tsd-anchor"></a>
-					<h3>is<wbr>Local</h3>
-					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Local<span class="tsd-signature-symbol">(</span>env<span class="tsd-signature-symbol">: </span><a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/env.ts#L65">env.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/context.ts#L42">context.ts:42</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Checks whether an environment is local or not.</p>
+									<p>Checks whether a context is the client one or not.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>env: <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h5>
+									<h5>context: <a href="../enums/_context_.context.html" class="tsd-signature-type">Context</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The given environment.</p>
+										<p>The given context.</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>A boolean value, indicating whether this is the <a href="../enums/_env_.env.html#local">Env.Local</a> environment or not.</p>
+							<p>A boolean value, indicating whether this is the <a href="../enums/_context_.context.html#client">Context.Client</a> value or not.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="isonserver" class="tsd-anchor"></a>
-					<h3>is<wbr>OnServer</h3>
+					<a name="isserver" class="tsd-anchor"></a>
+					<h3>is<wbr>Server</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>OnServer<span class="tsd-signature-symbol">(</span>env<span class="tsd-signature-symbol">: </span><a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Server<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="../enums/_context_.context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/env.ts#L75">env.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/context.ts#L52">context.ts:52</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Checks whether an environment is &quot;server-side&quot; or not.</p>
+									<p>Checks whether a context is the server one or not.</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>env: <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h5>
+									<h5>context: <a href="../enums/_context_.context.html" class="tsd-signature-type">Context</a></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The given environment.</p>
+										<p>The given context.</p>
 									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
-							<p>A boolean value, indicating whether this is the <a href="../enums/_env_.env.html#staging">Env.Staging</a> or <a href="../enums/_env_.env.html#prod">Env.Prod</a> environments.</p>
+							<p>A boolean value, indicating whether this is the <a href="../enums/_context_.context.html#server">Context.Server</a> value or not.</p>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
-					<a name="parseenv" class="tsd-anchor"></a>
-					<h3>parse<wbr>Env</h3>
+					<a name="parsecontext" class="tsd-anchor"></a>
+					<h3>parse<wbr>Context</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
-						<li class="tsd-signature tsd-kind-icon">parse<wbr>Env<span class="tsd-signature-symbol">(</span>env<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></li>
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Context<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/_context_.context.html" class="tsd-signature-type">Context</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/env.ts#L24">env.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/context.ts#L22">context.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Transform a string representation of an env into a <a href="../enums/_env_.env.html">Env</a> value.</p>
+									<p>Transform a string representation of a context into a <a href="../enums/_context_.context.html">Context</a> value.</p>
 								</div>
 								<dl class="tsd-comment-tags">
 									<dt>throws</dt>
-									<dd><p>If the string can&#39;t be transformed to a <a href="../enums/_env_.env.html">Env</a> value, throws an {@link Error}.</p>
+									<dd><p>If the string can&#39;t be transformed to a <a href="../enums/_context_.context.html">Context</a> value, throws an {@link Error}.</p>
 									</dd>
 								</dl>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>env: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
+									<h5>context: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></h5>
 									<div class="tsd-comment tsd-typography">
-										<p>The string representation of the environment.</p>
+										<p>The string representation of the context.</p>
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h4>
-							<p>A <a href="../enums/_env_.env.html">Env</a> value corresponding to the string representation.</p>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/_context_.context.html" class="tsd-signature-type">Context</a></h4>
+							<p>A <a href="../enums/_context_.context.html">Context</a> value corresponding to the string representation.</p>
 						</li>
 					</ul>
 				</section>
@@ -232,13 +205,13 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="_context_.html">"context"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="_currency_.html">"currency"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="_env_.html">"env"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -261,19 +234,16 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-enum tsd-parent-kind-external-module">
-						<a href="../enums/_env_.env.html" class="tsd-kind-icon">Env</a>
+						<a href="../enums/_context_.context.html" class="tsd-kind-icon">Context</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_env_.html#envtostring" class="tsd-kind-icon">env<wbr>ToString</a>
+						<a href="_context_.html#isclient" class="tsd-kind-icon">is<wbr>Client</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_env_.html#islocal" class="tsd-kind-icon">is<wbr>Local</a>
+						<a href="_context_.html#isserver" class="tsd-kind-icon">is<wbr>Server</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_env_.html#isonserver" class="tsd-kind-icon">is<wbr>OnServer</a>
-					</li>
-					<li class=" tsd-kind-function tsd-parent-kind-external-module">
-						<a href="_env_.html#parseenv" class="tsd-kind-icon">parse<wbr>Env</a>
+						<a href="_context_.html#parsecontext" class="tsd-kind-icon">parse<wbr>Context</a>
 					</li>
 				</ul>
 			</nav>

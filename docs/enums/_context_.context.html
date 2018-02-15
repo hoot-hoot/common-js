@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>InternalWebFetcher | common-js</title>
+	<title>Context | common-js</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_web_fetcher_.html">&quot;web-fetcher&quot;</a>
+					<a href="../modules/_context_.html">&quot;context&quot;</a>
 				</li>
 				<li>
-					<a href="_web_fetcher_.internalwebfetcher.html">InternalWebFetcher</a>
+					<a href="_context_.context.html">Context</a>
 				</li>
 			</ul>
-			<h1>Class InternalWebFetcher</h1>
+			<h1>Enumeration Context</h1>
 		</div>
 	</div>
 </header>
@@ -72,75 +72,57 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>A <a href="../interfaces/_web_fetcher_.webfetcher.html">WebFetcher</a> for communication between services on the server side.</p>
+						<p>The context of a piece of code. Sometimes you want code to behave differently if
+							you&#39;re running it in a server (that is, a computer controlled by the company), or on
+						a client (that is, a computer controlled by a user), and this enum is useful for that.</p>
 					</div>
 				</div>
-			</section>
-			<section class="tsd-panel tsd-hierarchy">
-				<h3>Hierarchy</h3>
-				<ul class="tsd-hierarchy">
-					<li>
-						<span class="target">InternalWebFetcher</span>
-					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/_web_fetcher_.webfetcher.html" class="tsd-signature-type">WebFetcher</a></li>
-				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Enumeration members</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_web_fetcher_.internalwebfetcher.html#fetch" class="tsd-kind-icon">fetch</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_context_.context.html#client" class="tsd-kind-icon">Client</a></li>
+								<li class="tsd-kind-enum-member tsd-parent-kind-enum"><a href="_context_.context.html#server" class="tsd-kind-icon">Server</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="fetch" class="tsd-anchor"></a>
-					<h3>fetch</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fetch<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestInit</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/_web_fetcher_.webfetcher.html">WebFetcher</a>.<a href="../interfaces/_web_fetcher_.webfetcher.html#fetch">fetch</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/web-fetcher.ts#L35">web-fetcher.ts:35</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Perform a HTTP request like in <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" class="external">fetch</a>, but via Node, rather
-									than the browser-based one.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>uri: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>options: <span class="tsd-signature-type">RequestInit</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The various request options as documented <a href="https://developer.mozilla.org/en-US/docs/Web/API/Request/Request" class="external">here</a>.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol">&gt;</span></h4>
-							<p>A {@link Promise} with a <a href="https://developer.mozilla.org/en-US/docs/Web/API/Response" class="external">Response</a> type.</p>
-						</li>
-					</ul>
+				<h2>Enumeration members</h2>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="client" class="tsd-anchor"></a>
+					<h3>Client</h3>
+					<div class="tsd-signature tsd-kind-icon">Client<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/context.ts#L10">context.ts:10</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Represents the context of code running on a client.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-enum-member tsd-parent-kind-enum">
+					<a name="server" class="tsd-anchor"></a>
+					<h3>Server</h3>
+					<div class="tsd-signature tsd-kind-icon">Server<span class="tsd-signature-symbol">:</span> </div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/876504f/src/context.ts#L12">context.ts:12</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Represents the context of code running on a server.</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -150,7 +132,7 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
+					<li class="current tsd-kind-external-module">
 						<a href="../modules/_context_.html">"context"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
@@ -171,30 +153,36 @@
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_slugify_.html">"slugify"</a>
 					</li>
-					<li class="current tsd-kind-external-module">
+					<li class=" tsd-kind-external-module">
 						<a href="../modules/_web_fetcher_.html">"web-<wbr>fetcher"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_web_fetcher_.apigatewaywebfetcher.html" class="tsd-kind-icon">Api<wbr>Gateway<wbr>Web<wbr>Fetcher</a>
-					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_web_fetcher_.internalwebfetcher.html" class="tsd-kind-icon">Internal<wbr>Web<wbr>Fetcher</a>
+					<li class="current tsd-kind-enum tsd-parent-kind-external-module">
+						<a href="_context_.context.html" class="tsd-kind-icon">Context</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_web_fetcher_.internalwebfetcher.html#fetch" class="tsd-kind-icon">fetch</a>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_context_.context.html#client" class="tsd-kind-icon">Client</a>
+							</li>
+							<li class=" tsd-kind-enum-member tsd-parent-kind-enum">
+								<a href="_context_.context.html#server" class="tsd-kind-icon">Server</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="../interfaces/_web_fetcher_.webfetcher.html" class="tsd-kind-icon">Web<wbr>Fetcher</a>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_context_.html#isclient" class="tsd-kind-icon">is<wbr>Client</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_context_.html#isserver" class="tsd-kind-icon">is<wbr>Server</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="../modules/_context_.html#parsecontext" class="tsd-kind-icon">parse<wbr>Context</a>
 					</li>
 				</ul>
 			</nav>
