@@ -4,6 +4,12 @@
  * by up to 7 arguments.
  */
 
+/** Imports. Also so typedoc works correctly. */
+import * as r from 'raynor'
+
+import { LanguageMarshaller } from './language'
+
+
 /** A message where strings are not parametrized. */
 export type MessageWith0Arg = { [key: string]: string };
 
@@ -41,3 +47,32 @@ export type Message =
     MessageWith5Arg |
     MessageWith6Arg |
     MessageWith7Arg;
+
+/** A marshaller for {@link MessageWith0Arg}. */
+export class MessageWith0ArgMarshaller implements r.Marshaller<MessageWith0Arg> {
+    private readonly _mapMarshaller: r.MapMarshaller<string, string>;
+
+    constructor() {
+        this._mapMarshaller = new r.MapMarshaller(new LanguageMarshaller(), new r.StringMarshaller());
+    }
+
+    extract(raw: any): MessageWith0Arg {
+        const mapResult = this._mapMarshaller.extract(raw);
+        const result: MessageWith0Arg = {};
+
+        for (let [k, v] of mapResult.entries()) {
+            result[k] = v;
+        }
+
+        return result;
+    }
+
+    pack(message: MessageWith0Arg): any {
+        const map = new Map<string, string>();
+        for (let k of Object.keys(message)) {
+            map.set(k, message[k]);
+        }
+
+        return this._mapMarshaller.pack(map);
+    }
+}
