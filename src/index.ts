@@ -26,6 +26,7 @@ export {
 export {
     Message,
     MessageWith0Arg,
+    MessageWith0ArgMarshaller,
     MessageWith1Arg,
     MessageWith2Arg,
     MessageWith3Arg,
