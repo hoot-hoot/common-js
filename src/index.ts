@@ -20,6 +20,10 @@ export {
 } from './env'
 
 export {
+    devOnly
+} from './dev-only'
+
+export {
     LanguageMarshaller,
     LanguageFromLocaleMarshaller
 } from './language'
