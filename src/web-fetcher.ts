@@ -49,11 +49,9 @@ export class InternalWebFetcher implements WebFetcher {
 export class ApiGatewayWebFetcher implements WebFetcher {
     private static readonly _options: any = {
         method: 'POST',
-        mode: 'cors',
         cache: 'no-cache',
         redirect: 'error',
-        referrer: 'client',
-        credentials: 'include'
+        referrer: 'client'
     };
 
     private readonly _apiGatewayHost: string;
