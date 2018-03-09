@@ -87,6 +87,7 @@
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#envtostring" class="tsd-kind-icon">env<wbr>ToString</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#isfordevelopment" class="tsd-kind-icon">is<wbr>For<wbr>Development</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#islocal" class="tsd-kind-icon">is<wbr>Local</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#isonserver" class="tsd-kind-icon">is<wbr>OnServer</a></li>
 								<li class="tsd-kind-function tsd-parent-kind-external-module"><a href="_env_.html#parseenv" class="tsd-kind-icon">parse<wbr>Env</a></li>
@@ -107,7 +108,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/f28195b/src/env.ts#L46">env.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/aa43e1e/src/env.ts#L46">env.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -124,6 +125,44 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
+					<a name="isfordevelopment" class="tsd-anchor"></a>
+					<h3>is<wbr>For<wbr>Development</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>For<wbr>Development<span class="tsd-signature-symbol">(</span>env<span class="tsd-signature-symbol">: </span><a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/aa43e1e/src/env.ts#L76">env.ts:76</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks whether an environment is for &quot;development&quot; or not.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>note</dt>
+									<dd><p>Currently the only non-development environment is the <a href="../enums/_env_.env.html#prod">Env.Prod</a> one. The idea is
+										that this method is used to check whether some testing or debugging code should be enabled.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>env: <a href="../enums/_env_.env.html" class="tsd-signature-type">Env</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The given environment.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>A boolean value, indicating whether this is such an environment or not.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module">
 					<a name="islocal" class="tsd-anchor"></a>
 					<h3>is<wbr>Local</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module">
@@ -133,7 +172,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/f28195b/src/env.ts#L65">env.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/aa43e1e/src/env.ts#L65">env.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -165,7 +204,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/f28195b/src/env.ts#L75">env.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/aa43e1e/src/env.ts#L86">env.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -197,7 +236,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/f28195b/src/env.ts#L24">env.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/truesparrow/common-js/blob/aa43e1e/src/env.ts#L24">env.ts:24</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,6 +304,9 @@
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_env_.html#envtostring" class="tsd-kind-icon">env<wbr>ToString</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-external-module">
+						<a href="_env_.html#isfordevelopment" class="tsd-kind-icon">is<wbr>For<wbr>Development</a>
 					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-external-module">
 						<a href="_env_.html#islocal" class="tsd-kind-icon">is<wbr>Local</a>
