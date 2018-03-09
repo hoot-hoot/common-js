@@ -1,7 +1,14 @@
 import { expect } from 'chai'
 import 'mocha'
 
-import { Env, parseEnv, isLocal, isOnServer, envToString } from './env'
+import {
+    Env,
+    parseEnv,
+    isForDevelopment,
+    isLocal,
+    isOnServer,
+    envToString
+} from './env'
 
 
 describe('Env', () => {
@@ -97,7 +104,25 @@ describe('Env', () => {
         });
     });
 
-    describe('isOnLocal', () => {
+    describe('isForDevelopment', () => {
+        it('should recognize local for development', () => {
+            expect(isForDevelopment(Env.Local)).to.be.true;
+        });
+
+        it('should recognize test for development', () => {
+            expect(isForDevelopment(Env.Test)).to.be.true;
+        });
+
+        it('should recognize staging for development', () => {
+            expect(isForDevelopment(Env.Staging)).to.be.true;
+        });
+
+        it('should recognize prod as not for development', () => {
+            expect(isForDevelopment(Env.Prod)).to.be.false;
+        });
+    });
+
+    describe('isOnServer', () => {
         it('should recognize local as not on server', () => {
             expect(isOnServer(Env.Local)).to.be.false;
         });

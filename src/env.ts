@@ -45,14 +45,14 @@ export function parseEnv(env: string | undefined): Env {
  */
 export function envToString(env: Env): string {
     switch (env) {
-    case Env.Local:
-        return 'LOCAL';
-    case Env.Test:
-        return 'TEST';
-    case Env.Staging:
-        return 'STAGING';
-    case Env.Prod:
-        return 'PROD';
+        case Env.Local:
+            return 'LOCAL';
+        case Env.Test:
+            return 'TEST';
+        case Env.Staging:
+            return 'STAGING';
+        case Env.Prod:
+            return 'PROD';
     }
 }
 
@@ -64,6 +64,17 @@ export function envToString(env: Env): string {
  */
 export function isLocal(env: Env): boolean {
     return env == Env.Local;
+}
+
+/**
+ * Checks whether an environment is for "development" or not.
+ * @note Currently the only non-development environment is the {@link Env.Prod} one. The idea is
+ * that this method is used to check whether some testing or debugging code should be enabled.
+ * @param env - The given environment.
+ * @returns A boolean value, indicating whether this is such an environment or not.
+ */
+export function isForDevelopment(env: Env): boolean {
+    return env == Env.Local || env == Env.Test || env == Env.Staging;
 }
 
 
