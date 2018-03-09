@@ -12,12 +12,12 @@ export function devOnly(env: Env) {
     return (_target: any, _propertyKey: string, descriptor: PropertyDescriptor) => {
         const original = descriptor.value;
 
-        descriptor.value = (...args: any[]) => {
+        descriptor.value = function(...args: any[]) {
             if (!isForDevelopment(env)) {
                 throw new Error('Calling dev only code in a non-dev environment');
             }
 
-            return original(...args);
+            return original.call(this, ...args);
         };
 
         return descriptor;
