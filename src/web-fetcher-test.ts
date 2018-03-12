@@ -48,6 +48,7 @@ describe('ApiGatewayWebFetcher', () => {
             cache: 'no-cache',
             redirect: 'error',
             referrer: 'client',
+            credentials: 'include',
             headers: {
                 'Content-Type': 'application/json'
             },

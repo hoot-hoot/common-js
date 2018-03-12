@@ -51,7 +51,8 @@ export class ApiGatewayWebFetcher implements WebFetcher {
         method: 'POST',
         cache: 'no-cache',
         redirect: 'error',
-        referrer: 'client'
+        referrer: 'client',
+        credentials: 'include'
     };
 
     private readonly _apiGatewayHost: string;
