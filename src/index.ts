@@ -16,6 +16,7 @@ export {
     envToString,
     isForDevelopment,
     isLocal,
+    isNotOnServer,
     isOnServer
 } from './env'
 

@@ -6,6 +6,7 @@ import {
     parseEnv,
     isForDevelopment,
     isLocal,
+    isNotOnServer,
     isOnServer,
     envToString
 } from './env'
@@ -119,6 +120,24 @@ describe('Env', () => {
 
         it('should recognize prod as not for development', () => {
             expect(isForDevelopment(Env.Prod)).to.be.false;
+        });
+    });
+
+    describe('isNotOnServer', () => {
+        it('should recognize local as not on server', () => {
+            expect(isNotOnServer(Env.Local)).to.be.true;
+        });
+
+        it('should recognize test as not on server', () => {
+            expect(isNotOnServer(Env.Test)).to.be.true;
+        });
+
+        it('should recognize staging as on server', () => {
+            expect(isNotOnServer(Env.Staging)).to.be.false;
+        });
+
+        it('should recognize prod as server', () => {
+            expect(isNotOnServer(Env.Prod)).to.be.false;
         });
     });
 

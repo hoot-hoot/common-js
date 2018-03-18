@@ -77,6 +77,15 @@ export function isForDevelopment(env: Env): boolean {
     return env == Env.Local || env == Env.Test || env == Env.Staging;
 }
 
+/**
+ * Checks whether an environment is "controlled" or not.
+ * @param env - The given environment.
+ * @returns A boolean value, indicating whether this is the {@link Env.Locale or {@link Env.Test} environment.
+ */
+export function isNotOnServer(env: Env): boolean {
+    return !isOnServer(env);
+}
+
 
 /**
  * Checks whether an environment is "server-side" or not.
