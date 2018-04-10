@@ -8,10 +8,10 @@ export enum Env {
     Local,
     /** The continuous integration test server. */
     Test,
-    /** The staging system is a small-scale copy of the {@link Env.Prod} system, used for manual testing and exploration. */
+    /** The staging system is a small-scale copy of the {@link Env.Live} system, used for manual testing and exploration. */
     Staging,
-    /** The production system is the one which serves user traffic and with which people interact. */
-    Prod
+    /** The live system is the one which serves user traffic and with which people interact. */
+    Live
 }
 
 
@@ -32,8 +32,8 @@ export function parseEnv(env: string | undefined): Env {
             return Env.Test;
         case 'STAGING':
             return Env.Staging;
-        case 'PROD':
-            return Env.Prod;
+        case 'LIVE':
+            return Env.Live;
         default:
             throw new Error(`Invalid environment ${env}`);
     }
@@ -51,8 +51,8 @@ export function envToString(env: Env): string {
             return 'TEST';
         case Env.Staging:
             return 'STAGING';
-        case Env.Prod:
-            return 'PROD';
+        case Env.Live:
+            return 'LIVE';
     }
 }
 
@@ -68,7 +68,7 @@ export function isLocal(env: Env): boolean {
 
 /**
  * Checks whether an environment is for "development" or not.
- * @note Currently the only non-development environment is the {@link Env.Prod} one. The idea is
+ * @note Currently the only non-development environment is the {@link Env.Live} one. The idea is
  * that this method is used to check whether some testing or debugging code should be enabled.
  * @param env - The given environment.
  * @returns A boolean value, indicating whether this is such an environment or not.
@@ -90,8 +90,8 @@ export function isNotOnServer(env: Env): boolean {
 /**
  * Checks whether an environment is "server-side" or not.
  * @param env - The given environment.
- * @returns A boolean value, indicating whether this is the {@link Env.Staging} or {@link Env.Prod} environments.
+ * @returns A boolean value, indicating whether this is the {@link Env.Staging} or {@link Env.Live} environments.
  */
 export function isOnServer(env: Env): boolean {
-    return env == Env.Staging || env == Env.Prod;
+    return env == Env.Staging || env == Env.Live;
 }

@@ -24,7 +24,7 @@ describe('devOnly', () => {
         @devOnly(Env.Staging)
         stagingFn(): string { return 'C'; }
 
-        @devOnly(Env.Prod)
+        @devOnly(Env.Live)
         prodFn(): string { return 'D'; }
     }
 

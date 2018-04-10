@@ -32,10 +32,10 @@ describe('Env', () => {
             expect(parseEnv('sTaGiNg')).to.equal(Env.Staging);
         });
 
-        it('should parse prod', () => {
-            expect(parseEnv('PROD')).to.equal(Env.Prod);
-            expect(parseEnv('prod')).to.equal(Env.Prod);
-            expect(parseEnv('pRoD')).to.equal(Env.Prod);
+        it('should parse live', () => {
+            expect(parseEnv('LIVE')).to.equal(Env.Live);
+            expect(parseEnv('live')).to.equal(Env.Live);
+            expect(parseEnv('lIvE')).to.equal(Env.Live);
         });
 
         it('should throw on undefined', () => {
@@ -60,8 +60,8 @@ describe('Env', () => {
             expect(envToString(Env.Staging)).to.equal('STAGING');
         });
 
-        it('should convert prod', () => {
-            expect(envToString(Env.Prod)).to.equal('PROD');
+        it('should convert live', () => {
+            expect(envToString(Env.Live)).to.equal('LIVE');
         });
     });
 
@@ -81,9 +81,9 @@ describe('Env', () => {
             expect(parseEnv(envToString(Env.Staging))).to.equal(Env.Staging);
         });
 
-        it('should be the case for prod', () => {
-            expect(envToString(parseEnv('PROD'))).to.equal('PROD');
-            expect(parseEnv(envToString(Env.Prod))).to.equal(Env.Prod);
+        it('should be the case for live', () => {
+            expect(envToString(parseEnv('LIVE'))).to.equal('LIVE');
+            expect(parseEnv(envToString(Env.Live))).to.equal(Env.Live);
         });
     });
 
@@ -100,8 +100,8 @@ describe('Env', () => {
             expect(isLocal(Env.Staging)).to.be.false;
         });
 
-        it('should recognize prod as non-local', () => {
-            expect(isLocal(Env.Prod)).to.be.false;
+        it('should recognize live as non-local', () => {
+            expect(isLocal(Env.Live)).to.be.false;
         });
     });
 
@@ -118,8 +118,8 @@ describe('Env', () => {
             expect(isForDevelopment(Env.Staging)).to.be.true;
         });
 
-        it('should recognize prod as not for development', () => {
-            expect(isForDevelopment(Env.Prod)).to.be.false;
+        it('should recognize live as not for development', () => {
+            expect(isForDevelopment(Env.Live)).to.be.false;
         });
     });
 
@@ -136,8 +136,8 @@ describe('Env', () => {
             expect(isNotOnServer(Env.Staging)).to.be.false;
         });
 
-        it('should recognize prod as server', () => {
-            expect(isNotOnServer(Env.Prod)).to.be.false;
+        it('should recognize live as server', () => {
+            expect(isNotOnServer(Env.Live)).to.be.false;
         });
     });
 
@@ -154,8 +154,8 @@ describe('Env', () => {
             expect(isOnServer(Env.Staging)).to.be.true;
         });
 
-        it('should recognize prod as server', () => {
-            expect(isOnServer(Env.Prod)).to.be.true;
+        it('should recognize live as server', () => {
+            expect(isOnServer(Env.Live)).to.be.true;
         });
     });
 });
